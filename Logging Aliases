@@ -1,0 +1,6 @@
+#First two aliases used to add a timestamp to the start of your bash prompt, then remove it when you're done
+alias stampon="PS1='\${debian_chroot:+(\$debian_chroot)}[\D{%F %T}] \[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '"
+alias stampoff=". ~/.bashrc"
+
+#Function used to start a `script` session with the timestamp switched on. Timestamped prompt is removed when the session ends
+tscript(){ if [ $# -eq 0 ]; then file="typescript"; else file="$1"; fi; temprc=$(mktemp); cat ~/.bashrc > $temprc; echo "export PS1='\${debian_chroot:+(\$debian_chroot)}[\D{%F %T}] \[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '" >>$temprc; script -c "bash --rcfile $temprc" "$file"; rm $temprc; unset temprc; }
