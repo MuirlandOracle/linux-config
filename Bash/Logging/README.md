@@ -17,8 +17,9 @@ For logging with a timestamp and an anonymised terminal
 
 See `man script` for options
 
-__Logging to a specific file:__
+++Logging to a specific file:++
+
 ![Terminal-clip](https://i.imgur.com/OMtlNFW.png)
 
-__Logging to the default file:__
+++Logging to the default file:++
 ![Terminal-clip](https://i.imgur.com/s8w3PwH.png)
