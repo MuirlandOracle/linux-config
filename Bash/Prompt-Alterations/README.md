@@ -11,3 +11,8 @@
 * `-time    Removes the timestamp from the start of the terminal prompt`
 * `+anon    Anonymises your terminal prompt`
 * `-anon    Restores your original terminal prompt values`
+
+
+Usage example:
+
+![Terminal-Clip](https://i.imgur.com/4b4Vvs0.png)
