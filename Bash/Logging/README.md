@@ -15,6 +15,10 @@ For logging with anonymised terminal
 For logging with a timestamp and an anonymised terminal
 * `atscript  [options] <output-file>`
 
-
-
 See `man script` for options
+
+__Logging to a specific file:__
+[!Terminal-clip][https://i.imgur.com/OMtlNFW.png]
+
+__Logging to the default file:__
+[!Terminal-clip][https://i.imgur.com/s8w3PwH.png]
