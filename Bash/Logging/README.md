@@ -2,7 +2,7 @@
 ## Functions making use of the `script` command to implement timestamping and/or anonymised terminal prompt
 
 ### Setup
-* Copy the contents of `logging` into you `~/.bash_aliases` file
+* Copy the contents of `Logging-Functions` into your `~/.bash_aliases` file
 * Execute `. ~/.bashrc`
 
 ### Usage
