@@ -8,7 +8,9 @@
 ### Usage
 For logging with a timestamp
 * `tscript   [options] <output-file>`
+
 For logging with anonymised terminal
 * `ascript   [options] <output-file>`
+
 For logging with a timestamp and an anonymised terminal
 * `atscript  [options] <output-file>`
