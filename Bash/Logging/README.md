@@ -7,8 +7,8 @@
 
 ### Usage
 For logging with a timestamp
-* `tscript [__options__] <output-file>`
+* `tscript   [__options__] <output-file>`
 For logging with anonymised terminal
-* `ascript [__options__] <output-file>`
+* `ascript   [__options__] <output-file>`
 For logging with a timestamp and an anonymised terminal
 *  `atscript [__options__] <output-file>`
