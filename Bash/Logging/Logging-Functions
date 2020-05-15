@@ -1,3 +1,5 @@
 tscript(){ temprc=$(mktemp); cat ~/.bashrc > $temprc; echo "export PS1=\"$(echo $PS1 | sed -e 's/)\}\\\[/)\}[\\D{%F %T}] \\\[/g') \"" >>$temprc; script -c "bash --rcfile $temprc" "$@"; rm $temprc; unset temprc; }
 
-atscript(){ temprc=$(mktemp); cat ~/.bashrc > $temprc; echo "export PS1=\"$(echo $PS1 | sed -e 's/\\\u/muri/g' -e 's/\\\h/anonymised-terminal/g' -e 's/)\}\\\[/)\}[\\D{%F %T}] \\\[/g') \"" >>$temprc; script -c "bash --rcfile $temprc" "$@"; rm $temprc; unset temprc; }
+atscript(){ temprc=$(mktemp); cat ~/.bashrc > $temprc; echo "export PS1=\"$(echo $PS1 | sed -e 's/\\\u/anon/g' -e 's/\\\h/anonymised-terminal/g' -e 's/)\}\\\[/)\}[\\D{%F %T}] \\\[/g') \"" >>$temprc; script -c "bash --rcfile $temprc" "$@"; rm $temprc; unset temprc; }
+
+ascript(){ temprc=$(mktemp); cat ~/.bashrc > $temprc; echo "export PS1=\"$(echo $PS1 | sed -e 's/\\\u/anon/g' -e 's/\\\h/anonymised-terminal/g') \"" >>$temprc; script -c "bash --rcfile $temprc" "$@"; rm $temprc; unset temprc; }
