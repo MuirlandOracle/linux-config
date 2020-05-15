@@ -6,7 +6,7 @@
 * Execute `. ~/.bashrc`
 
 ### Usage:
-```cpro (+/-)anon|(+/-)time
+```cpro (+/-)anon|(+/-)time```
 * `+time    Adds a timestamp to the start of the terminal prompt`
 * `-time    Removes the timestamp from the start of the terminal prompt`
 * `+anon    Anonymises your terminal prompt`
