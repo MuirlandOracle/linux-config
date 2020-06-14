@@ -1,0 +1,1 @@
+prof () { usage () ( printf "Usage:\nprof +ss|-ss\n\n"; ); if [ $# -ne 1 ]; then usage; return; elif [ $1 == "+ss" ]; then xdotool key shift+F10 r 3 Return Return; elif [ $1 == "-ss" ]; then xdotool key shift+F10 r 3 Down Return Return; else usage; fi; }
