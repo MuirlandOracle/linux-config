@@ -9,4 +9,4 @@ Depends on:
 2. Add the `prof` command to your `~/.bash_aliases`
 
 Usage:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XBtjXgilwQ4?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://youtu.be/XBtjXgilwQ4
