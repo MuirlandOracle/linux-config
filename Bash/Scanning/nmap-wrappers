@@ -1,0 +1,9 @@
+#Initial Port scan, requires cb
+alias cb="xclip -selection c"
+function initial-scan { sudo nmap -p- -vv -oG initial-scan $1 && local ports=$(egrep -o "[0-9]+/" initial-scan | sed -e 's/\///' | xargs | sed 's/ /,/g'); echo $ports; echo $ports | cb; }
+
+#Common/Service Scan
+function common-scan { sudo nmap -sV -sC -Pn -p $2 -vv $1 | tee common-script-scan; }
+
+#Get Ports from initial-scan results file:
+function getports { egrep -o "[0-9]+/" $1 | sed -e 's/\///' | xargs | sed 's/ /,/g' | cb; }
