@@ -1,0 +1,7 @@
+#Webservers
+alias up="ls && ip a | egrep \"inet[^6]\" | awk '{if (\$2 != \"127.0.0.1/8\"){ print \$2; }}' | cut -d \"/\" -f 1 && sudo python3 -m http.server 80"
+alias servecommon="ls /commontools/* && ip a | egrep \"inet[^6]\" | awk '{if (\$2 != \"127.0.0.1/8\"){ print \$2; }}' | cut -d \"/\" -f 1 && sudo python3 -m http.server 80 --directory /commontools"
+
+#smbservers
+alias smbserv="ls && printf \"\\n\" && ip a | egrep \"inet[^6]\" | awk '{if (\$2 != \"127.0.0.1/8\"){ print \$2; }}' | cut -d \"/\" -f 1 && printf \"\\n\\n\" && sudo /opt/impacket/examples/smbserver.py share ."
+alias smbcommon="ls /commontools/* && printf \"\\n\" && ip a | egrep \"inet[^6]\" | awk '{if (\$2 != \"127.0.0.1/8\"){ print \$2; }}' | cut -d \"/\" -f 1 && printf \"\\n\\n\" && sudo /opt/impacket/examples/smbserver.py share /commontools"
