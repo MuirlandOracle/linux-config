@@ -9,7 +9,7 @@
 * Add the aliases into you `~/.bash_aliases` file
 * Re-source your `bashrc` with `source ~/.bashrc`
 * Use the aliases as added:
- - `up`
- - `servecommon`
- - `smbserv`
- - `smbcommon`
+  - `up`
+  - `servecommon`
+  - `smbserv`
+  - `smbcommon`
