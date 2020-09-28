@@ -1,1 +1,1 @@
-alias vpn="tmux new -s THMVPN  \"sudo openvpn <PATH-TO-CONFIG>\""
+alias vpn="tmux new -s VPN  \"sudo openvpn <PATH-TO-CONFIG>\""
